@@ -28,7 +28,6 @@ document.querySelector("#btn").addEventListener("click", function() {
             duration: 0.5,
             ease: "power2"
         })
-
         menu = 0;
     } else {
         gsap.to("nav", {
@@ -50,7 +49,6 @@ document.querySelector("#btn").addEventListener("click", function() {
             duration: 0.5,
             ease: "power2"
         })
-
         menu = 1;
     }
 })
@@ -75,7 +73,6 @@ document.querySelector("#main").addEventListener("click", function() {
             duration: 0.4,
             ease: "power2"
         })
-
         menu = 0;
     }
 })
