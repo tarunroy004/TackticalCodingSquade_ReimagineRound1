@@ -74,3 +74,13 @@ nav {
     top: 45%;
     right: 18%;
 }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 480px) {
+    
+}
