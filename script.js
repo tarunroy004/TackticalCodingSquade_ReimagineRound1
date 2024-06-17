@@ -129,7 +129,7 @@ document.querySelector("#main").addEventListener("click", function() {
     }
 })
 
-//Menu Items Anit=mation
+//Menu Items Anitmation
 //opt1
 document.querySelector(".option1").addEventListener("mouseenter", function() {
     gsap.to(".option1 .oneth", {
