@@ -53,6 +53,7 @@ body, html {
     background-color: #000;
 }
 
+
 /*  nav  */
 
 nav {
@@ -150,7 +151,7 @@ nav a {
     background-color: #dadada;
     border-radius: 100%;
     rotate: 90deg;
-}
+} 
 
 #nav2 h1 {
     color: #dadada;
@@ -234,7 +235,7 @@ nav a {
     color: #000;
     font-size: 1.5rem;
 }
- 
+
 #page1 #top .bottom {
     margin-top: 5vh;
     display: flex;
@@ -242,7 +243,7 @@ nav a {
     align-items: center;
 }
 
-#page1 #top .bottom .left {
+.page1 .info .bottom .left {
     display: flex;
     align-items: center;
     gap: 10px;

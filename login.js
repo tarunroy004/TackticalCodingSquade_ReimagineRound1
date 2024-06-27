@@ -12,6 +12,223 @@ Shery.makeMagnet("#magnet", {
     duration: 0.5,
 });
 
+// Menu Button On off Animation
+let menu = 0;
+document.querySelector("#btn").addEventListener("click", function() {
+    if(menu == 1) {
+        gsap.to("body", {
+            overflowY: "auto"
+        })
+        gsap.to("#nav", {
+            backgroundColor: "transparent",
+            backdropFilter: "none",
+            width : "100%",
+            duration: 0.6,
+            ease: "power2"
+        })
+        gsap.to("#nav2", {
+            zIndex: 999,
+            opacity: 1,
+            duration: 0.2,
+            ease: "power1"
+        })
+        gsap.to(".bar", {
+            rotate: "0deg",
+            top: "50%",
+            left: "50%",
+            duration: 0.4,
+            ease: "power2"
+        })
+        gsap.to(".close", {
+            rotate: "0deg",
+            top: "110%",
+            left: "110%",
+            duration: 0.5,
+            ease: "power2"
+        })
+        gsap.to("#menuItem", {
+            opacity: 0,
+            duration: 0.2,
+            ease: "power1"
+        })
+        gsap.to(".yt", {
+            zIndex: 1999,
+        })
+        menu = 0;
+    } else {
+        gsap.to("body", {
+            overflowY: "hidden"
+        })
+        gsap.to("#nav", {
+            backgroundColor: "rgba(37, 37, 37, 0.26)",
+            backdropFilter: "blur(10px)",
+            width : "50vw",
+            duration: 0.5,
+            ease: "power2"
+        })
+        gsap.to("#nav2", {
+            zIndex: 1,
+            opacity: 0,
+            duration: 0.2,
+            ease: "power1"
+        })
+        gsap.to(".bar", {
+            rotate: "-180deg",
+            top: "-10%",
+            left: "-10%",
+            duration: 0.4,
+            ease: "power2"
+        })
+        gsap.to(".close", {
+            rotate: "-360deg",
+            top: "50%",
+            left: "50%",
+            duration: 0.5,
+            ease: "power2"
+        })
+        gsap.to("#menuItem", {
+            opacity: 1,
+            duration: 0.5,
+            ease: "power2"
+        })
+        gsap.to(".yt", {
+            zIndex: 1,
+        })
+        menu = 1;
+    }
+})
+document.querySelector("#main").addEventListener("click", function() {
+    if(menu == 1) {
+        gsap.to("body", {
+            overflowY: "auto"
+        })
+        gsap.to("#nav", {
+            backgroundColor: "transparent",
+            backdropFilter: "none",
+            width : "100%",
+            duration: 0.6,
+            ease: "power2"
+        })
+        gsap.to("#nav2", {
+            zIndex: 999,
+            opacity: 1,
+            duration: 0.2,
+            ease: "power1"
+        })
+        gsap.to(".bar", {
+            rotate: "0deg",
+            top: "50%",
+            left: "50%",
+            duration: 0.4,
+            ease: "power2"
+        })
+        gsap.to(".close", {
+            rotate: "0deg",
+            top: "110%",
+            left: "110%",
+            duration: 0.4,
+            ease: "power2"
+        })
+        gsap.to("#menuItem", {
+            opacity: 0,
+            duration: 0.2,
+            ease: "power1"
+        })
+        gsap.to(".yt", {
+            zIndex: 1999,
+        })
+        menu = 0;
+    }
+})
+
+//Menu Items Anitmation
+//opt1
+document.querySelector(".option1").addEventListener("mouseenter", function() {
+    gsap.to(".option1 .oneth", {
+        top: "-100%",
+        duration: "0.3"
+    })
+    gsap.to(".option1 .twoth", {
+        top: "0",
+        duration: "0.3"
+    })
+})
+document.querySelector(".option1").addEventListener("mouseleave", function() {
+    gsap.to(".option1 .oneth", {
+        top: "0",
+        duration: "0.3"
+    })
+    gsap.to(".option1 .twoth", {
+        top: "100%",
+        duration: "0.3"
+    })
+})
+//opt2
+document.querySelector(".option2").addEventListener("mouseenter", function() {
+    gsap.to(".option2 .oneth", {
+        top: "-100%",
+        duration: "0.3"
+    })
+    gsap.to(".option2 .twoth", {
+        top: "0",
+        duration: "0.3"
+    })
+})
+document.querySelector(".option2").addEventListener("mouseleave", function() {
+    gsap.to(".option2 .oneth", {
+        top: "0",
+        duration: "0.3"
+    })
+    gsap.to(".option2 .twoth", {
+        top: "100%",
+        duration: "0.3"
+    })
+})
+//opt3
+document.querySelector(".option3").addEventListener("mouseenter", function() {
+    gsap.to(".option3 .oneth", {
+        top: "-100%",
+        duration: "0.3"
+    })
+    gsap.to(".option3 .twoth", {
+        top: "0",
+        duration: "0.3"
+    })
+})
+document.querySelector(".option3").addEventListener("mouseleave", function() {
+    gsap.to(".option3 .oneth", {
+        top: "0",
+        duration: "0.3"
+    })
+    gsap.to(".option3 .twoth", {
+        top: "100%",
+        duration: "0.3"
+    })
+})
+//opt4
+document.querySelector(".option4").addEventListener("mouseenter", function() {
+    gsap.to(".option4 .oneth", {
+        top: "-100%",
+        duration: "0.3"
+    })
+    gsap.to(".option4 .twoth", {
+        top: "0",
+        duration: "0.3"
+    })
+})
+document.querySelector(".option4").addEventListener("mouseleave", function() {
+    gsap.to(".option4 .oneth", {
+        top: "0",
+        duration: "0.3"
+    })
+    gsap.to(".option4 .twoth", {
+        top: "100%",
+        duration: "0.3"
+    })
+})
+
+//Nav 1
+
 //Nav 2
 gsap.from("#nav2", {
     bottom: "-10%",
@@ -103,26 +320,6 @@ document.querySelector("#nav2 #items").addEventListener("mouseleave", ()=> {
     })
 })
 
-// circle
-
-document.querySelector("#page1").addEventListener("mousemove", function(dets) {
-    gsap.to("#page1 #cir", {
-        left: dets.x,
-        top: dets.y,
-        duration:2,
-        ease: "power4.out",
-        delay: 0.2
-    })
-})
-document.querySelector("#page1").addEventListener("mouseleave", function(dets) {
-    gsap.to("#page1 #cir", {
-        left: "50%",
-        top: "50%",
-        duration:2,
-        ease: "power4.out",
-        delay: 0.2
-    })
-})
 
 
 //PAge 2 
