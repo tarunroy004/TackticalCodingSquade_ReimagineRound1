@@ -50,7 +50,6 @@ body, html {
 #main {
     height: 100%;
     width: 100%;
-    background-color: #000;
 }
 
 /*  nav  */
@@ -214,6 +213,7 @@ nav a {
     align-items: center;
     position: relative;
     padding: 5%;
+    background-color: #000000;
 }
 
 #page1 #bg {
@@ -473,6 +473,14 @@ nav a {
     width: 100%;
     position: relative;
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#page4 h1 {
+    font-family: Gilroy;
+    font-size: 8rem;
+    text-transform: uppercase;
 }
 
 #page4 #card {
@@ -745,9 +753,248 @@ nav a {
 /* Responsive Design */
 
 @media (max-width: 768px) {
-    
+
 }
 
 @media (max-width: 480px) {
-    
+    #main {
+        overflow-x: hidden;
+    }
+    nav #left a {
+        display: none;
+    }
+    nav #right {
+        padding-right: 3vw;
+    }
+    nav #right .hide {
+        display: none;
+    }
+    nav #right a {
+        font-size: 1.1rem;
+        border-bottom: 2px solid #dadada;
+    }
+    nav #logo img {
+        border-radius: 5px;
+        padding: 3px 5px;
+    }
+    #page1 h1 {
+        font-size: 7rem;
+    }
+    #page1 h3 {
+        font-size: 2rem;
+    }
+    #page1 p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    #nav2 {
+        bottom: 5%;
+    }
+    #nav2 h1 {
+        font-size: 1.8rem;
+    }
+    #nav2 i {
+        font-size: 2rem;
+    }
+    #nav2 #button {
+        height: 63px;
+        width: 170px;
+    }
+    #nav2 #items #item {
+        font-size: 1.5rem;
+        padding: 3px 10px;
+    }
+    #page2 {
+        height: 125vh;
+    }
+    #page2 #cards .img1 img {
+        width: 189px;
+        top: 58vh;
+        left: 52%;
+        box-shadow: 20px -20px 40px #00000065;
+    }
+    #page2 #cards .img2 img {
+        width: 189px;
+        top: 58vh;
+        left: 3.5%;
+        box-shadow: -20px -20px 40px #00000065;
+    }
+    #page2 #cards .img3 img {
+        width: 189px;
+        top: 83vh;
+        left: 3.5%;
+        box-shadow: -20px 20px 40px #00000065;
+    }
+    #page2 #cards .img4 img {
+        width: 189px;
+        top: 91.1vh;
+        left: 52%;
+        box-shadow: 20px 20px 40px #00000065;
+    }
+    #page2 #text {
+        top: 5%;
+        transform: translate(-50%, 0%);
+    }
+    #page2 #text h1 {
+        font-size: 5rem;
+    }
+
+    /* Page 3 */
+
+    #page3 {
+        height: 135vh;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12% 5% 0 5%;
+    }
+    #page3 #text {
+        width: fit-content;
+        gap: 2vh;
+    }
+    #page3 #text h1 {
+        font-size: 4rem;
+    }
+    #page3 #cards {
+        width: 100%;
+    }
+    #page3 #cards #card {
+        width: 95%;
+        padding: 20px 20px;
+        gap: 5%;
+        flex-direction: column-reverse;
+    }
+    #page3 #cards .card1 {
+        top: 32vh;
+    }
+    #page3 #cards .card2 {
+        top: 42vh;
+    }
+    #page3 #cards .card3 {
+        top: 52vh;
+    }
+    #page3 #cards #card #image img {
+        width: 77vw;
+    }
+    #page3 #cards #card #text {
+        height: fit-content;
+        width: 100%;
+        margin: 1vh;
+    }
+    #page3 #cards #card #text h1 {
+        font-size: 4rem;
+        line-height: 50px;
+    }
+    #page3 #cards #card #text h2 {
+        padding: 0;
+        background-color: transparent;
+    }
+    #page3 #cards .card1:hover {
+        top: 23vh;
+    }
+    #page3 #cards .card2:hover {
+        top: 35vh;
+    }
+    #page3 #cards .card3:hover {
+        top: 48vh;
+    }
+    #page4 {
+        height : fit-content;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-self: center;
+        padding: 2vh;
+        gap: 2vh;
+    }
+
+    #page4 #card {
+        position: unset;
+        transform: translate(0%, 0%);
+        height: fit-content;
+        width: 100%;
+        rotate: 0deg;
+        gap: 2vh;
+    }
+    #page4 #card img {
+        width: 90%;
+    }
+    #page4 h1 {
+        font-size: 4.5rem;
+    }
+
+    /* Page 6 */
+    #page6 {
+        height: fit-content;
+        width: 100%;
+        padding: 5vh 2vh;
+    }
+    #page6 #pad {
+        height: 100%;
+        width: 100%;
+        padding: 2vh 2vw 4vh 4vw;
+        display: flex;
+        justify-content: space-between;
+        gap: 5vh;
+    }
+    #page6 #pad #top {
+        height: fit-content;
+        width: 100%;
+    }
+    #page6 #pad #top h1{
+        font-size: 6rem;
+    }
+    #page6 #pad #bottom {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    /* Bottom */
+    #footer {
+        height: 90vh;
+        padding: 8vh 5vw 20vh 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #footer #top {
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    #footer #top #left {
+        width: 100%;
+    }
+    #footer #top #left #two {
+        align-items: flex-end;
+        gap: 1.78vh;
+    }
+    #footer #top #left #two #item {
+        color: #cfcfcf;
+    }
+    #footer #top #right {
+        width: 100%;
+    }
+    #footer #bottom{
+        height: fit-content;
+    }
+    #footer #bottom #time {
+        justify-content: space-between;
+        gap: 2vw;
+        align-self: flex-end;
+    }
+    #footer #bottom #time h1 {
+        font-family: Gilroy;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: #fff;
+    }
+    #footer #bottom #sm {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
 }
