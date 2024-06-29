@@ -973,6 +973,7 @@ nav a {
     }
     #footer #top #left #two #item {
         color: #cfcfcf;
+        text-align: end;
     }
     #footer #top #right {
         width: 100%;
