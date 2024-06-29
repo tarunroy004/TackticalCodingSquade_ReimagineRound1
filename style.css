@@ -809,26 +809,26 @@ nav a {
     }
     #page2 #cards .img1 img {
         width: 189px;
-        top: 58vh;
+        top: 43%;
         left: 52%;
         box-shadow: 20px -20px 40px #00000065;
     }
     #page2 #cards .img2 img {
         width: 189px;
-        top: 58vh;
+        top: 43%;
         left: 3.5%;
         box-shadow: -20px -20px 40px #00000065;
     }
     #page2 #cards .img3 img {
         width: 189px;
-        top: 83vh;
         left: 3.5%;
+        bottom: 8%;
         box-shadow: -20px 20px 40px #00000065;
     }
     #page2 #cards .img4 img {
         width: 189px;
-        top: 91.1vh;
         left: 52%;
+        bottom: 8%;
         box-shadow: 20px 20px 40px #00000065;
     }
     #page2 #text {
