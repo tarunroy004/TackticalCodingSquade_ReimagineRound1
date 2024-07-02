@@ -174,6 +174,8 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
+    overflow: hidden;
 }
 
 #login #right #box form h1 {
@@ -211,7 +213,6 @@ body, html {
 }
  
 #login #right #box form #signup {
-    margin-top: 15vh;
     padding-top: 1vh;
     border-top: 1px solid #202020;
     width: 100%;
@@ -420,6 +421,7 @@ body, html {
         margin-bottom: 1vh;
     }
     #login #right #box form {
+        height: fit-content;
         width: 100%;
     }
     #login #right #box form h1 {
@@ -436,9 +438,6 @@ body, html {
         margin-top: 3vh;
     }
     #login #right #box form #signup {
-        position: absolute;
-        bottom: 0;
-        left: 0;
         padding: 2vh 2vw;
     }
     #login #right #box form #signup h2{
@@ -453,6 +452,8 @@ body, html {
         text-decoration: none;
         color: #695f06;
     }
+
+
     /* Bottom */
     #footer {
         height: 90vh;

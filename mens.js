@@ -17,19 +17,6 @@ Shery.makeMagnet("#magnet", {
 
 //Nav 2
 if (window.innerWidth > 480) {
-    gsap.from("#nav2", {
-        bottom: "-10%",
-        opacity: 0,
-        ease: "power1",
-        scrollTrigger : {
-            trigger: "#page2",
-            scroller: "body",
-            markers: false,
-            start: "top 90%",
-            end: "top 80%",
-            scrub: 1
-        }
-    })
 
     document.querySelector("#nav2").addEventListener("mouseover", () => {
         gsap.to("#nav2 i", {

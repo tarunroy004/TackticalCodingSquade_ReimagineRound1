@@ -37,7 +37,7 @@
     background-color: transparent;
     color: #C56386;
 }
- 
+
 body, html {
     height: 100%;
     width: 100%;
@@ -52,6 +52,7 @@ body, html {
     width: 100%;
     background-color: #000;
 }
+
 
 /*  nav  */
 
@@ -150,7 +151,7 @@ nav a {
     background-color: #dadada;
     border-radius: 100%;
     rotate: 90deg;
-}
+} 
 
 #nav2 h1 {
     color: #dadada;
@@ -234,7 +235,7 @@ nav a {
     color: #000;
     font-size: 1.5rem;
 }
- 
+
 #page1 #top .bottom {
     margin-top: 5vh;
     display: flex;
@@ -242,7 +243,7 @@ nav a {
     align-items: center;
 }
 
-#page1 #top .bottom .left {
+.page1 .info .bottom .left {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -553,21 +554,21 @@ nav a {
 }
 
 #page1 #bottom .item1 #bg {
-    background: #dc5635;
+    background: #FF4314;
     border-radius: 20px;
     height: 100%;
     width: 100%;
 }
 
 #page1 #bottom .item2 #bg {
-    background: #aa5baa;
+    background: #FF99FF;
     border-radius: 20px;
     height: 100%;
     width: 100%;
 }
 
 #page1 #bottom .item3 #bg {
-    background: #5520b1;
+    background: #5A00FA;
     border-radius: 20px;
     height: 100%;
     width: 100%;
@@ -810,275 +811,5 @@ nav a {
 }
 
 @media (max-width: 480px) {
-    #main {
-        overflow-x: hidden;
-    }
-    nav {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    nav #left a {
-        font-size: 1.1rem;
-        border-bottom: 2px solid #dadada;
-    }
-    nav #right {
-        padding-right: 3vw;
-    }
-    nav .hide {
-        display: none;
-    }
-    nav #right a {
-        font-size: 1.1rem;
-        border-bottom: 2px solid #dadada;
-    }
-    nav #logo img {
-        border-radius: 5px;
-        padding: 3px 5px;
-    }
-    #page1 h1 {
-        font-size: 7rem;
-    }
-    #page1 h3 {
-        font-size: 2rem;
-    }
-    #page1 p {
-        font-size: 1.3rem;
-        text-align: center;
-    }
-    #nav2 {
-        bottom: 5%;
-    }
-    #nav2 h1 {
-        font-size: 1.8rem;
-    }
-    #nav2 i {
-        font-size: 2rem;
-    }
-    #nav2 #button {
-        height: 63px;
-        width: 170px;
-    }
-    #nav2 #items #item {
-        font-size: 1.5rem;
-        padding: 3px 10px;
-    }
-        
-    /* Page 1 */
-
-    #page1 {
-        align-items: center;
-        padding: 15vh 5vw 5vh 5vw;
-        gap: 5vh;
-        justify-content: center;
-        position: relative;
-    }
-    #page1 #top {
-        padding: 0;
-    }
-    #page1 #top h1 {
-        font-size: 7rem;
-    }
-    #page1 #top p {
-        text-align: start;
-    }
-    #page1 #top .bottom {
-        margin-top: 4vh;
-        gap: 10px;
-    }
-    #page1 #top .bottom .left {
-        gap: 5px;
-    }
-    .workbtn {
-        padding: 10px;
-    }
-    .workbtn h5 {
-        font-size: 17px;
-    }
-    #page1 #top .bottom .right {
-        gap: 5px;
-    }
-    #page1 #top .bottom .right .bar {
-        padding: 10px;
-    }
-    #page1 #top .bottom .right i {
-        font-size: 20px;
-    }
-    #page1 #middle {
-        gap: 2vh;
-        justify-content: space-evenly;
-    }
-    #page1 #middle #item {
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 2vh;
-    }
-    #page1 #middle #item #image {
-        height: 150px;
-    }
-    #page1 #middle #item #det h1 {
-        font-size: 1.2rem;
-
-    }
-    #page1 #middle #item #det #detBot {
-        margin-top: 5px;
-        padding-top: 5px;
-    }
-    #page1 #middle #item #det h2 {
-        font-size: 0.7rem;
-    }
-    #page1 .explore {
-        display: flex;
-        align-items: center;
-    }
-    #page1 .explore i {
-        font-size: 1.4rem;
-    }
-    #page1 .explore .icon1 {
-        top: 50%;
-        left: 85.7%;
-    }
-    #page1 .explore .icon2 {
-        top: 120%;
-        left: 71.7%;
-    }
-    #page1 .explore:hover .icon1 {
-        top: -10%;
-        left: 106.7%;
-    }
-    #page1 .explore:hover .icon2 {
-        top: 50%;
-        left: 85.7%;
-    }
-    #page1 #bottom {
-        gap: 1.7vw;
-    }
-    #page1 #bottom #item {
-        height: 30vh;
-    }
-    #page1 #bottom .item3 #top #right {
-        gap: 1.5vw;
-    }
-    #page1 #bottom .item3 #top #right h2 {
-        font-size: 1.1rem;
-    }
-    #page1 #bottom #item h1 {
-        font-size: 3rem;
-    }
-    #page1 #bottom #item #top {
-        padding: 15px 15px;
-    }
-    #page1 #bottom #item #top h2 {
-        font-size: 1.2rem;
-    }
-    #page1 #bottom #item #top button {
-        width: 15vw;
-        font-size: 1.2rem;
-    }
-    #page1 #bottom #item #bot {
-        padding: 15px 15px;
-        position: absolute;
-    }
-    #page1 #bottom #item #bot h2 {
-        font-size: 1rem;
-    }
-    #page1 #bottom #item #bot #right {
-        align-self: flex-end;
-    }
-    #page1 #bottom #item #bot #right h2 {
-        text-align: end;
-    }
-    #page1 #bottom .item3 #top #right {
-        flex-direction: column;
-    }
-    /* PAge 2 */
-    #page2 {
-        height: fit-content;
-        width: 100%;
-        padding: 0 3vw 10vh 3vw;
-        flex-direction: column;
-        align-items: center;
-    }
-    #page2 #items {
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 2vh;
-    }
-    #page2 #item {
-        height: 50%;
-        width: 100%;
-        margin-bottom: 0;
-    }
-    #page2 #item #image {
-        width: 100%;
-        height: 60%;
-    }
-    #page2 #item #image #bg {
-        height: 100%;
-        width: 100%;
-    }
-    #page2 #item #image button {
-        width: 20vw;
-        font-size: 1.1rem;
-        padding: 5px;
-    }
-    #page2 #item #text {
-        padding: 1vh 0.5vw;
-    }
-    #page2 #item #text h1 {
-        font-size: 2.5rem;
-    }
-    /* Bottom */
-    #footer {
-        height: 90vh;
-        padding: 8vh 5vw 20vh 5vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    #footer #top {
-        height: fit-content;
-        width: 100%;
-        flex-direction: column;
-        gap: 5vh;
-    }
-    #footer #top #left {
-        width: 100%;
-    }
-    #footer #top #left #two {
-        align-items: flex-end;
-        gap: 1.78vh;
-    }
-    #footer #top #left #two #item {
-        color: #cfcfcf;
-        text-align: end;
-    }
-    #footer #top #right {
-        width: 100%;
-    }
-    #footer #bottom{
-        height: fit-content;
-    }
-    #footer #bottom #time {
-        justify-content: space-between;
-        gap: 2vw;
-        align-self: flex-end;
-    }
-    #footer #bottom #time h1 {
-        font-family: Gilroy;
-        text-transform: uppercase;
-        font-size: 2rem;
-        color: #fff;
-    }
-    #footer #bottom #sm {
-        display: flex;
-        flex-direction: column;
-        gap: 2vw;
-    }
-
+    
 }
