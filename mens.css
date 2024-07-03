@@ -908,16 +908,17 @@ nav a {
         gap: 2vh;
         justify-content: space-evenly;
     }
-    #page1 #middle #item {
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 2vh;
-    }
+    
     #page1 #middle #item #image {
-        height: 150px;
+        height: fit-content;
+        width: fit-content;
     }
+    
+    #page1 #middle #item #image img {
+        width: 100%;
+    }
+
+
     #page1 #middle #item #det h1 {
         font-size: 1.2rem;
 
