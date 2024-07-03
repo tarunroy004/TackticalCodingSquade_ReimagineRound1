@@ -52,6 +52,42 @@ body, html {
     width: 100%;
 }
 
+/* Pre Loader */
+
+#main {
+    background-color: #1C1D20;
+  }
+  
+  .preloader {
+    z-index: 99999;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    transition: all ease-out 0.5s;
+    box-shadow: 0 0 500px #000;
+  }
+  
+  .preloader i {
+    color: #daddad;
+    font-size: 11px;
+  }
+  
+  .preloader h2 {
+    font-family: Gilroy-med;
+    color: #fff;
+    font-size: 40px;
+  }
+   
+
 /*  nav  */
 
 nav {

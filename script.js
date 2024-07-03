@@ -14,6 +14,48 @@ Shery.makeMagnet("#magnet", {
     duration: 0.5,
 });
 
+
+// Pre Loader
+
+const arr = ["Hello", "नमस्ते", "નમસ્તે", "Hola", "ഹലോ", "హలో", "নমস্কার", "Helo"]
+let i = 0;
+
+let preload = setInterval(() => {
+  document.querySelector("#preloadh2").innerHTML = arr[i];
+  i++
+  if (i == arr.length) {
+    i = 0;
+  }
+}, 250)
+
+gsap.to("body", {
+    overflowY: "hidden",
+    cursor: "none"
+})
+
+window.addEventListener("load", () => {
+  setInterval(() => {
+    gsap.to(".preloader", {
+      top: "-100vh",
+      borderBottomLeftRadius: "50%",
+      borderBottomRightRadius: "50%",
+      boxShadow: "0 0 0 #000",
+      duration: "0.2",
+      ease: "power2"
+    })
+    gsap.to(".page1", {
+      opacity: 1,
+    })
+    gsap.to("body", {
+      cursor: "default",
+      overflowY: "auto"
+    })
+    clearInterval(preload);
+  }, 2400)
+})
+
+
+
 //Nav 2
 if (window.innerWidth > 480) {
     gsap.from("#nav2", {
