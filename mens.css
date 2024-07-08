@@ -1002,24 +1002,25 @@ nav a {
         font-size: 1.1rem;
     }
     #page1 #bottom #item h1 {
-        font-size: 3rem;
+        font-size: 2.2rem;
+        text-align: center;
     }
     #page1 #bottom #item #top {
         padding: 15px 15px;
     }
     #page1 #bottom #item #top h2 {
-        font-size: 1.2rem;
+        font-size: 0.rem;
     }
     #page1 #bottom #item #top button {
         width: 15vw;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
     #page1 #bottom #item #bot {
         padding: 15px 15px;
         position: absolute;
     }
     #page1 #bottom #item #bot h2 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     #page1 #bottom #item #bot #right {
         align-self: flex-end;
@@ -1029,6 +1030,9 @@ nav a {
     }
     #page1 #bottom .item3 #top #right {
         flex-direction: column;
+    }
+    #page1 #bottom .item3 #top #right h2 {
+        font-size: 0.9rem;
     }
     /* PAge 2 */
     #page2 {
